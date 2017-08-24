@@ -8,13 +8,13 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let salon of salons">
       <ion-thumbnail item-start>
-        <img src="assets/images/salon_box/img1.jpg">
+        <img src="{{salon.img}}">
       </ion-thumbnail>
-      <h2>My Neighbor Totoro</h2>
-      <p>Hayao Miyazaki • 1988</p>
-      <button ion-button clear item-end>View</button>
+      <h3>{{salon.address}}</h3>
+      <p>{{salon.metroAddress}}</p>
+      <button ion-button clear icon-only item-end><ion-icon name="navigate"></ion-icon></button>
     </ion-item>
   </ion-list>
 </ion-content>
