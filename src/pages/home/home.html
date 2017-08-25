@@ -1,15 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Выбор салона
     </ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="continue(selectedSalon)" [disabled]="!selectedSalon">
+          <span ion-text color="primary" showWhen="ios">Дале</span>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let salon of salons">
+    <ion-item *ngFor="let salon of salons" (click)="onAddressSelect(salon)">
       <ion-thumbnail item-start>
+        <div [class.selected-salon-ios]="selectedSalon === salon" showWhen="ios"></div>
+        <div [class.selected-salon-android]="selectedSalon === salon" showWhen="android"></div>
         <img src="{{salon.img}}">
       </ion-thumbnail>
       <h3>{{salon.address}}</h3>

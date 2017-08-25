@@ -8,6 +8,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ContactsPage } from '../pages/contacts/contacts';
 import { MapPage } from '../pages/map/map';
 import { SalonProvider } from '../providers/salon/salon';
 
@@ -15,7 +16,8 @@ import { SalonProvider } from '../providers/salon/salon';
   declarations: [
     MyApp,
     HomePage,
-    MapPage
+    MapPage,
+    ContactsPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { SalonProvider } from '../providers/salon/salon';
   entryComponents: [
     MyApp,
     HomePage,
-    MapPage
+    MapPage,
+    ContactsPage
   ],
   providers: [
     StatusBar,
