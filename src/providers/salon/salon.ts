@@ -15,43 +15,57 @@ export class SalonProvider {
       id: 1,
       img: "assets/images/salon_box/img1.jpg",
       address: "Непокоренных, 10",
-      metroAddress: "Площадь мужества"
+      metroAddress: "Площадь мужества",
+      lat: -34.9290,
+      lng: 138.6032
     },
     {
       id: 2,
       img: "assets/images/salon_box/img2.jpg",
       address: "Большая Зеленина, 3",
-      metroAddress: "Чкаловская"
+      metroAddress: "Чкаловская",
+      lat: -34.9690,
+      lng: 138.6020
     },
     {
       id: 3,
       img: "assets/images/salon_box/img3.jpg",
       address: "Александра Невского 21 к.2",
-      metroAddress: "Адмиралтейская"
+      metroAddress: "Адмиралтейская",
+      lat: -34.9290,
+      lng: 138.6011
     },
     {
       id: 4,
       img: "assets/images/salon_box/img4.jpg",
       address: "Невский проспект, 23",
-      metroAddress: "Адмиралтейская"
+      metroAddress: "Адмиралтейская",
+      lat: -34.9290,
+      lng: 138.6110
     },
     {
       id: 5,
       img: "assets/images/salon_box/img5.jpg",
       address: "Непокоренных, 10",
-      metroAddress: "Площадь мужества"
+      metroAddress: "Площадь мужества",
+      lat: -34.9390,
+      lng: 138.5010
     },
     {
-      id: 5,
+      id: 6,
       img: "assets/images/salon_box/img6.jpg",
       address: "СНепокоренных, 10",
-      metroAddress: "Площадь мужества"
+      metroAddress: "Площадь мужества",
+      lat: -34.9190,
+      lng: 138.6010
     },
     {
-      id: 5,
+      id: 7,
       img: "assets/images/salon_box/img7.jpg",
       address: "СНепокоренных, 10",
-      metroAddress: "Площадь мужества"
+      metroAddress: "Площадь мужества",
+      lat: -34.8290,
+      lng: 138.6010
     },
 
   ];

@@ -20,14 +20,10 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
     this.salons = this.salonProvider.getSalons();
-    console.log(this.salons);
   }
 
   showOnMap(salon) {
-    //To Do: show maps
-    //To Do: find address on maps
-
-    let modal = this.modalCtrl.create(MapPage);
+    let modal = this.modalCtrl.create(MapPage, {salon: salon});
     modal.present();
   }
 
